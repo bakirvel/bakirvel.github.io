@@ -4,227 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dr. Veli Bakırcıoğlu | bakirvel</title>
-  <meta name="description" content="Bits, bytes, and research-driven code engineered to life. Dr. Veli Bakırcıoğlu — Roboticist, Engineer, Researcher."/>
-  <style>
-    :root {
-      --bg: #0f1220;
-      --card: #161a2b;
-      --muted: #8a91b4;
-      --text: #e6e9ff;
-      --accent: #7aa2ff;
-      --accent2: #a3ffd6;
-      --border: #232845;
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 1080px; margin: 0 auto; padding: 24px; }
-    header { display: grid; gap: 16px; padding: 32px 0; align-items: center; }
-    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
-    nav a { margin-left: 16px; font-weight: 600; color: var(--muted); }
-    nav a:hover { color: var(--text); }
-    .hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; }
-    .badge { display: inline-grid; grid-auto-flow: column; align-items: center; gap: 8px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); font-size: 12px; }
-    .title { font-size: clamp(28px, 4.2vw, 48px); line-height: 1.1; margin: 8px 0 12px; }
-    .subtitle { color: var(--muted); max-width: 66ch; }
-    .cta { display: grid; grid-auto-flow: column; gap: 12px; margin-top: 16px; }
-    .btn { padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border); background: linear-gradient(180deg, #1a1f36, #101426); color: var(--text); font-weight: 600; }
-    .btn.primary { background: linear-gradient(180deg, var(--accent), #4f6ae6); color: #0b0f25; border-color: #5e78ff; }
-    .btn:hover { filter: brightness(1.05); }
-    .card { background: linear-gradient(180deg, var(--card), #101526); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
-    section { margin: 28px 0; }
-    h2 { font-size: 22px; margin: 6px 0 14px; }
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-    .col-4 { grid-column: span 4; } .col-6 { grid-column: span 6; } .col-8 { grid-column: span 8; } .col-12 { grid-column: span 12; }
-    .kvs { display: grid; gap: 8px; color: var(--muted); }
-    ul.clean { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-    .tag { display:inline-block; padding: 6px 10px; background:#0c1020; border:1px solid var(--border); border-radius:999px; color: var(--muted); font-size:12px; }
-    footer { color: var(--muted); padding: 32px 0 12px; border-top: 1px solid var(--border); margin-top: 24px; }
-    .pub { line-height: 1.35; }
-    .pub small { color: var(--muted); }
-    .links a { margin-right: 14px; }
-    @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; }
-      nav { display: none; }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="topbar">
-        <div class="logo badge">🔬 Roboticist • Engineer • Researcher</div>
-        <nav>
-          <a href="#about">Hakkımda</a>
-          <a href="#research">Araştırma</a>
-          <a href="#projects">Projeler</a>
-          <a href="#pubs">Yayınlar</a>
-          <a href="#awards">Ödüller</a>
-          <a href="#contact">İletişim</a>
-        </nav>
-      </div>
-      <div class="hero">
-        <div>
-          <div class="badge">💡 Signature — Bits, bytes, and research‑driven code engineered to life</div>
-          <h1 class="title">Dr. Veli Bakırcıoğlu</h1>
-          <p class="subtitle">
-            İHA özerkliği, gömülü uçuş kontrolü ve sürü sistemleri üzerine çalışan bir araştırmacıyım.
-            Odak alanlarım: gerçek zamanlı karar verme, NMPC tabanlı çevik uçuş ve donanım‑içinde‑gerçekleme.
-          </p>
-          <div class="cta">
-            <a class="btn primary" href="#projects">Projeleri Gör</a>
-            <a class="btn" href="#contact">İletişime Geç</a>
-          </div>
-          <div class="links" style="margin-top:14px;">
-            <a href="mailto:vbakircioglu@hotmail.com">E‑posta</a>
-            <a href="https://www.linkedin.com/in/vbakircioglu" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=C60H4-UAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-            <a href="https://orcid.org/0000-0002-1170-5327" target="_blank" rel="noopener">ORCID</a>
-          </div>
-        </div>
-        <div class="card kvs">
-          <div><strong>Kurucu Ortak, Ar‑Ge Direktörü</strong><br/>Skytech Robotik Teknolojileri A.Ş.</div>
-          <div><strong>Doktor Öğr. Üyesi</strong><br/>Aksaray Üniversitesi</div>
-          <div class="grid">
-            <div class="col-6">
-              <div class="card">
-                <div><strong>h‑index</strong></div>
-                <div style="font-size:28px;">9</div>
-                <small>Google Scholar</small>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="card">
-                <div><strong>SCI(E) Yayın</strong></div>
-                <div style="font-size:28px;">7+</div>
-                <small>Seçilmiş dergilerde</small>
-              </div>
-            </div>
-          </div>
-          <div class="badge">Güncelleme: Ağustos 2025</div>
-        </div>
-      </div>
-    </header>
-
-    <section id="about" class="grid">
-      <div class="col-8">
-        <div class="card">
-          <h2>Hakkımda</h2>
-          <p>
-            Makine mühendisliği kökenli bir robotikçiyim. İHA otonomisi, gömülü kontrol, sensör füzyonu ve sürü sistemleri
-            konularında akademi ve sanayi arasında köprü kuruyorum. Laboratuvardan sahaya uzanan uçtan uca geliştirme
-            ve doğrulama süreçlerine liderlik ediyorum.
-          </p>
-          <div style="margin-top:8px;">
-            <span class="tag">NMPC</span>
-            <span class="tag">PX4/ROS</span>
-            <span class="tag">Embedded Linux</span>
-            <span class="tag">Edge AI</span>
-            <span class="tag">Swarm Systems</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card">
-          <h2>Uzmanlık</h2>
-          <ul class="clean">
-            <li>• Çevik uçuş ve gerçek zamanlı karar verme</li>
-            <li>• Gömülü uçuş kontrolü (ARM tabanlı FCU)</li>
-            <li>• Merkeziyetsiz formasyon & çarpışma önleme</li>
-            <li>• HIL & saha testleri</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="research">
-      <div class="card">
-        <h2>Araştırma Alanları</h2>
-        <ul class="clean">
-          <li>• İHA Otonomisi — çevik uçuş, görev‑düzeyi davranışlar, planlama</li>
-          <li>• NMPC ve doğrusal olmayan kontrol — gerçek zamanlı gömülü çalıştırma</li>
-          <li>• Sürü Sistemleri — merkeziyetsiz formasyon, görev atama</li>
-          <li>• Doğrulama — HIL, uçuş günlüğü analitiği, saha validasyonu</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects" class="grid">
-      <div class="col-6">
-        <div class="card">
-          <h2>Öne Çıkan Projeler</h2>
-          <ul class="clean">
-            <li><strong>TÜBİTAK 3501</strong> — NMPC ile Çevik Uçuş Kontrol Ünitesi (FCU) geliştirme</li>
-            <li><strong>STRIKE / 1812</strong> — İHA’lar için Akıllı Saldırı Tespit Modülü; saha testleri ve ağ dayanıklılığı</li>
-            <li><strong>CTU MRS</strong> — Çoklu ajan formasyon ve gerçek zamanlı çarpışma önleme</li>
-            <li><strong>Skytech Savunma İHA</strong> — Edge‑AI ile keşif/gözetleme otonomisi</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="card">
-          <h2>Ödüller & Tanınırlık</h2>
-          <ul class="clean">
-            <li>NATO DIANA İnovasyon Hackathonu (2025)</li>
-            <li>TÜBİTAK 1812 Mükemmeliyet Mührü (2024)</li>
-            <li>CTU Global Postdoctoral Fellowship (2023)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="pubs">
-      <div class="card">
-        <h2>Seçilmiş Yayınlar</h2>
-        <div class="pub">
-          Flatness‑based finite‑horizon multi‑UAV formation trajectory planning and directionally aware collision avoidance tracking. <small>Journal of the Franklin Institute, 2025</small>
-        </div>
-        <div class="pub">
-          Optimization‑driven design and experimental validation of a hydraulic robot leg mechanism. <small>Measurement, 2025</small>
-        </div>
-        <div class="pub">
-          Experimental flight performance comparison of octocopter, decacopter and dodecacopter using universal UAV. <small>Measurement, 2023</small>
-        </div>
-        <p style="margin-top:10px;">
-          <a href="#contact">Tüm yayın listesi için iletişime geçin</a> veya <a href="https://scholar.google.com/citations?user=C60H4-UAAAAJ" target="_blank" rel="noopener">Google Scholar profilime göz atın</a>.
-        </p>
-      </div>
-    </section>
-
-    <section id="awards" class="grid">
-      <div class="col-12">
-        <div class="card">
-          <h2>İşbirlikleri & Görevler</h2>
-          <ul class="clean">
-            <li>Aksaray Üniversitesi — Doktor Öğretim Üyesi</li>
-            <li>Skytech Robotik — Kurucu Ortak & Ar‑Ge Direktörü</li>
-            <li>CTU MRS — Dış Araştırmacı</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="grid">
-      <div class="col-12">
-        <div class="card">
-          <h2>İletişim</h2>
-          <p>Yeni işbirliklerine ve proje fikirlerine açığım. Bana aşağıdaki kanallardan ulaşabilirsiniz.</p>
-          <div class="links">
-            <a href="mailto:vbakircioglu@hotmail.com">vbakircioglu@hotmail.com</a>
-            <a href="https://www.linkedin.com/in/vbakircioglu" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://orcid.org/0000-0002-1170-5327" target="_blank" rel="noopener">ORCID</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container" style="padding:0;">
-        © <span id="y"></span> Veli Bakırcıoğlu — built with GitHub Pages
-      </div>
-    </footer>
+  <div class="topbar">
+    <div class="logo">🔬 Roboticist • Engineer • Researcher</div>
+    <nav>
+      <a data-i18n="about" href="#about"></a>
+      <a data-i18n="projects" href="#projects"></a>
+      <a data-i18n="pubs" href="publications.html" target="_blank"></a>
+      <a data-i18n="contact" href="#contact"></a>
+      <button id="theme-toggle">🌙</button>
+      <button id="lang-toggle">TR/EN</button>
+    </nav>
   </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <header>
+    <h1 id="hero-title">Dr. Veli Bakırcıoğlu</h1>
+    <p id="hero-sub">Bits, bytes, and research-driven code engineered to life.</p>
+  </header>
+
+  <section id="about">
+    <h2 data-i18n="about"></h2>
+    <p data-i18n="about_text"></p>
+  </section>
+
+  <section id="projects">
+    <h2 data-i18n="projects"></h2>
+    <ul>
+      <li>TÜBİTAK 3501 — Agile Flight FCU</li>
+      <li>STRIKE / 1812 — Smart Attack Detection Module</li>
+      <li>CTU MRS — Multi-agent formation control</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2 data-i18n="contact"></h2>
+    <p>Email: <a href="mailto:vbakircioglu@hotmail.com">vbakircioglu@hotmail.com</a></p>
+  </section>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>
